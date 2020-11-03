@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav class="navbar navbar-light bg-light justify-content-between">
-        <a class="navbar-brand" href="#">Top 50 Books</a>
+        <a class="navbar-brand" href="http://127.0.0.1:8000/books/">Top 50 Books</a>
         <form action="" method="GET" class="form-inline">
             <input class="form-control mr-sm-2" type="search" name="book_name" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-sm">
                     Ranking #{{ book_item.rating }}
-                    <img src="{{ book_item.image }}" class="card" height="500" width="334"/>
+                    <img src="{{ book_item.image.url }}" class="card" height="500" width="334"/>
                 </div>
                 <div class="col-sm">
                    <h3> {{ book_item.name }} </h3>
